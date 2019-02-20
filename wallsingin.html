@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Wall project</title>
+		<link rel="stylesheet" href="css/stylesignin.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+<!-- Je vais commencer par la première page du site qui est la page d'identification -->
+<body>
+    <header>
+        <div>
+            <div id="logo">
+                    <img id="w" src="images/logowall.png" alt="the wall"><i class="far fa-registered"></i>
+            </div>
+        </div>
+        <div id="slogan"><H3>THE WALL</H3></div>
+    </header>
+    <div id="form1">
+        <div id="form">
+            <form action="/action_page.php" method="get">
+                <div class="form">
+                    <h3 id="formtitle">Sing in</h3>
+                    <input type="text" name="Pseudo" placeholder="Pseudo"><br>
+                    <input type="password" name="Passeword" placeholder="Passeword"><br>
+                        <div id="button">
+                            <button type="submit" form="form1" value="Submit">Begin</button>
+                        </div>
+                </div>
+            </form>    
+        </div>
+    </div>
+    <div id="form2">
+        <div id="form">
+            <form action="/action_page.php" method="get">
+                <div class="form">
+                    <h3 id="formtitle">Register</h3>
+                    <input type="text" name="Name" placeholder="First Name" required><br>
+                    <input type="text" name="Speudo" placeholder="Last Name" required><br>
+                    <input type="number" name="Age" placeholder="Age" required><br>
+                    <input type="email" name="Email" placeholder="Email" required><br>
+                    <input type="password" name="Passeword" placeholder="Passeword" required min="18" max="99" required><br>
+                        <div id="button">
+                            <button type="submit" form="form2" value="Submit">Begin</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="javascript/script.js"></script>
+<footer>
+
+</footer>
+
+</body>
